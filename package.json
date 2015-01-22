@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A deliciously light syntax theme based on flatuicolors.com",
-  "repository": "https://github.com/murphyrandle/kuali-light-syntax",
+  "repository": "https://github.com/murphyrandle/atom-kuali-light-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
