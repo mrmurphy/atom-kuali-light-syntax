@@ -1,11 +1,7 @@
 @import "syntax-variables";
 
-.editor-colors {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
-}
-
-.editor {
+atom-text-editor,
+:host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
   /* text-shadow: @shadow 0px 1px; */
@@ -55,15 +51,15 @@
   .selection .region {
     background-color: @syntax-selection-color;
   }
-}
 
-.editor .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
-}
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
 
-.editor .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
 }
 
 .comment {
@@ -309,6 +305,6 @@
   }
 }
 
-.editor.mini .scroll-view {
+atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }
